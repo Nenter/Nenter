@@ -1,11 +1,14 @@
 import java.util.Scanner;
+
 public class Criba {
-    public void inicializa(boolean array[]){
+
+    private static void inicializa(boolean array[]){
         for ( int i=2; i<array.length; i++)
             array[i] = true;
 // Eliminar el 0 y el 1, que no son primos
         array[0] = array[1] = false;}
-    public void criba (boolean array[]){
+
+    private static void criba (boolean array[]){
         for (int i=2; i<Math.sqrt(array.length)+1 ; i++) {
             if (array[i]) {
 // Eliminar los múltiplos de i
@@ -14,7 +17,8 @@ public class Criba {
             }
         }
     }
-    public int cuentaPrimos(boolean array[]){
+
+    private static  int cuentaPrimos(boolean array[]){
         int cuentaPrimos = 0;
         for (int i=0; i<array.length; i++) {
             if (array[i])
@@ -22,7 +26,8 @@ public class Criba {
         }
         return cuentaPrimos;
     }
-    public int[] totalPrimos(boolean array[]){
+
+    private static int[] totalPrimos(boolean array[]){
         int[] primos = new int[cuentaPrimos(array)];
         for (int i=0, j=0; i< array.length; i++) {
             if (array[i])
@@ -30,7 +35,7 @@ public class Criba {
         }
         return primos;
     }
-  
+   
     public static int[] generarPrimos (int max)
     {
         int i,j;
