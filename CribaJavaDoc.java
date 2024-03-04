@@ -15,7 +15,7 @@ public class Criba {
      * que se inicializan a false.
      * @param array
      */
-    public void inicializa(boolean array[]){
+    private static void inicializa(boolean array[]){
         for ( int i=2; i<array.length; i++)
             array[i] = true;
 // Eliminar el 0 y el 1, que no son primos
@@ -26,7 +26,7 @@ public class Criba {
      * Busca numeros primos de menor a mayor y elimina los múltiplos posibles.
      * @param array
      */
-    public void criba (boolean array[]){
+    private static void criba (boolean array[]){
         for (int i=2; i<Math.sqrt(array.length)+1 ; i++) {
             if (array[i]) {
 // Eliminar los múltiplos de i
@@ -41,7 +41,7 @@ public class Criba {
      * @param array
      * @return cuentaPrimos cantidad nominal de numeros primos en parametro 'array'.
      */
-    public int cuentaPrimos(boolean array[]){
+    private static  int cuentaPrimos(boolean array[]){
         int cuentaPrimos = 0;
         for (int i=0; i<array.length; i++) {
             if (array[i])
@@ -55,7 +55,7 @@ public class Criba {
      * @param array
      * @return primos array formado por números primos de parametro 'array'
      */
-    public int[] totalPrimos(boolean array[]){
+    private static int[] totalPrimos(boolean array[]){
         int[] primos = new int[cuentaPrimos(array)];
         for (int i=0, j=0; i< array.length; i++) {
             if (array[i])
