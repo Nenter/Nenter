@@ -31,8 +31,6 @@ public class Criba
             }
 // Rellenar el vector de números primos
             int[] primos = new int[cuenta];
-            Capítulo 4:OPTIMIZACIÓN Y DOCUMENTACIÓN
-            EJERCICIOS PROPUESTOS
             for (i=0, j=0; i<dim; i++) {
                 if (esPrimo[i])
                     primos[j++] = i;
