@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+Aprendiendo a programar en IES Caminás de forma semipresencial.
 ![Presentación Github (1)](https://github.com/Nenter/Nenter/assets/9704589/5dbf94d5-fd2a-4153-9289-e705ba165fba)
 <!--
 **Nenter/Nenter** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
